@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Registration form </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+
+
+ .container { 
+       
+width:960px;
+margin:0 auto;
+    } 
+.col1{
+width:400px;
+float:left;
+}
+.col2{
+width:450px;
+float:left;
+}
+input[type=text], input[type=password] { 
+        width: 90%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+}
+</style> 
+</head>  
+<body>  
+    <center> <h1> Registration Form </h1> </center> 
+<center> <p> Complete the form below and press the submit button!</center> 
+    <form>
+        <div class="container"> 
+            <label></label> 
+<div class="col1">
+            <input type="text" placeholder="Full name*" name="username" required><br>
+<input type="text" placeholder="Father name*" name="username" required><br>
+<input type="text" placeholder="Your Email Address*" name="username" required><br>
+<input type="text" placeholder="Date of birth*" name="username" required><br>
+<label>
+Phone :
+</label>
+<input type="text" name="country code" placeholder="+91" maxlength="3" size="3" style="width: 20px;">
+<input type="text" name="phone" placeholder="phone no." size="10" style="width: 215px;"/ required>
+
+</div>
+
+
+
+<div class="col2">
+<label>
+What is your gender?
+</label><br><br>
+<input type="radio" value="Male" name="gender" checked > Male <br>
+<br>
+<input type="radio" value="Female" name="gender"> Female<br>
+<br><br>
+<label>
+Enter ID Card number in given formate.
+</label><br><br>
+<input type="text" name="#####" placeholder="#####"  maxlength="5" size="5" style="width: 70px;">
+<input type="text" name="######" placeholder="######" maxlength="6"   size="6" style="width: 90px;">
+<input type="text" name="#" placeholder="#" maxlength="1"  size="1" style="width: 20px;"/ required>
+
+<br><br>           
+<label>
+Upload file
+</label><br><br>
+<input type="file" id="myfile" name="myfile" multiple><br><br>
+</div>
+
+</div>
+ </form>
+<center> <input type="submit" value ="submit Now" style="width: 200px;"></center> 
+ 
+</body>  
+
+ 
+</html>
