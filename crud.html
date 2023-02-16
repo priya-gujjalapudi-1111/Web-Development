@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD App</title>
+	<script src="crud.js"></script>
+</head>
+<body>
+<table border=1 width="75%" align="center">
+	<tr>
+		<td>
+			<form onSubmit="event.preventDefault();onFormSubmit()">
+				<div>
+					<label>Full Name</label>
+					<input type="text" name="fullname" id="fullname">
+				</div>
+				<div>
+					<label>EMP Code</label>
+					<input type="text" name="empcode" id="empcode">
+				</div>
+				<div>
+					<label>City</label>
+					<input type="text" name="city" id="city">
+				</div>
+				<div class="form-action-buttons">
+					<input type="submit" value="SUBMIT">
+				</div>
+			</form>
+		</td>
+	
+	<td>
+		<table align="center" border=1>
+			<tr>
+				<td>
+					search: <input type="text" id="myInput"  placeholder="Search name..." onKeyUp="searchName">
+
+
+				</td>
+			</tr>
+			
+		</table>
+		<table class="list" id="employeeList" align="center" border=1>
+			<thead>
+				<tr>
+					<th width="200">Full Name</th>
+					<th width="200">Emp Code</th>
+					<th width="200">City</th>
+					<th width="200">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>
